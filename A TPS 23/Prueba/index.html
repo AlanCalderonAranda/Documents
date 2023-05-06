@@ -1,0 +1,162 @@
+<style>
+    /* Estilos generales */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      
+      header {
+        background-color: #f8f8f8;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      a:hover {
+        color: #000;
+      }
+      
+      .header-image img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      main {
+        padding: 40px;
+        text-align: center;
+      }
+      
+      h1 {
+        margin-top: 0;
+      }
+      
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Estilos del acordeón */
+      .accordion {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .accordion-button {
+        background-color: #eee;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .accordion-button:hover,
+      .accordion-button.active {
+        background-color: #ccc;
+      }
+      
+      .accordion-content {
+        display: none;
+        padding: 10px 20px;
+      }
+      
+      .accordion-content a {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      
+      .accordion-content a:hover {
+        color: #000;
+      }
+
+      .center-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .center-image img {
+  max-width: 100%;
+  height: auto;
+}
+    </style>
+    
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <title>Clínica Veterinaria</title>
+      <link rel="stylesheet" href="/css/estilos.css">
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="center-image">
+          <img src="https://t2.ea.ltmcdn.com/es/posts/4/5/9/el_auxiliar_clinico_veterinario_figura_clave_en_el_dia_a_dia_de_la_clinica_veterinaria_25954_orig.jpg" alt="Imagen de cabecera">
+        </div>
+        <div class="accordion">
+          <button class="accordion-button">Mi perfil</button>
+          <div class="accordion-content">
+            <a href="#">Ver perfil</a>
+            <a href="#">Editar perfil</a>
+            <a href="#">Cerrar sesión</a>
+          </div>
+          <button class="accordion-button">Mis Mascotas</button>
+          <div class="accordion-content">
+            <a href="#">Ver mascotas</a>
+            <a href="#">Añadir mascota</a>
+          </div>
+          <button class="accordion-button">Mis citas</button>
+          <div class="accordion-content">
+            <a href="#">Ver citas</a>
+            <a href="#">Añadir cita</a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1>Bienvenido a la clínica veterinaria</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+      </main>
+      <footer>
+        <p>© 2023 Clínica Veterinaria. Todos los derechos reservados.</p>
+      </footer>
+    </body>
+    </html>
